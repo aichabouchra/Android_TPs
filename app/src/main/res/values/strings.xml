@@ -1,0 +1,32 @@
+<resources>
+    <string name="app_name">Calcul_App</string>
+    <string name="hint1">Taper un nombre</string>
+    <string name="titre">Welcome to GI TPs!</string>
+    <string name="titre1">Welcome to Calcul App!</string>
+    <string name="titre2">Welcome Again !</string>
+    <string name="titre3">Choisir l\'option de calcul!</string>
+    <string name="plus">Addition</string>
+    <string name="moins">Soustraction</string>
+    <string name="fois">Multiplication</string>
+    <string name="devise">Division</string>
+    <string name="titre4">Liste des Widgets Android</string>
+    <string name="home">Home</string>
+    <string name="nom_etudiant">Nom Etudiant</string>
+    <string name="hint_mes">Taper les lettres en majuscules</string>
+    <string name="sex">Sex</string>
+    <string name="fem">femme</string>
+    <string name="sex_fem">Femme</string>
+    <string name="sex_hom">Homme</string>
+    <string name="texton">On</string>
+
+    <string name="prompt">AIAC_GI_18</string>
+    <string name="labelnom">Nom</string>
+    <string name="labelprenom">Prenom</string>
+    <string name="labeltel">Numéro Téléphone</string>
+    <string-array name="listePromo">
+        <item>AIAC_GI_18</item>
+        <item>AIAC_GI_19</item>
+        <item>AIAC_GI_20</item>
+    </string-array>
+
+</resources>
