@@ -61,15 +61,6 @@ public class ListViewPersoActivity extends AppCompatActivity {
 
         contact = new HashMap<String, Object>();
         contact.put("ln", "Nom : ");
-        contact.put("vn", "BERACHAD");
-        contact.put("lp", "Prenom : ");
-        contact.put("vp", "Ayoub");
-        contact.put("lt", "Téléphone : ");
-        contact.put("vt", "0600000000");
-        listContact.add(contact);
-
-        contact = new HashMap<String, Object>();
-        contact.put("ln", "Nom : ");
         contact.put("vn", "BOUSTTA");
         contact.put("lp", "Prenom : ");
         contact.put("vp", "Kaoutar");

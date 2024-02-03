@@ -37,7 +37,7 @@
             android:text="Calcul App"
             android:textColor="@color/white"
             android:textSize="25sp"
-            android:layout_marginVertical="20dp"/>
+            android:layout_marginVertical="10dp"/>
 
         <Button
             android:id="@+id/tp"
@@ -46,7 +46,7 @@
             android:text="TP Page"
             android:textColor="@color/white"
             android:textSize="25sp"
-            android:layout_marginVertical="20dp"/>
+            android:layout_marginVertical="10dp"/>
 
 
         <Button
@@ -56,7 +56,7 @@
             android:text="ListView Page"
             android:textColor="@color/white"
             android:textSize="25sp"
-            android:layout_marginVertical="20dp"/>
+            android:layout_marginVertical="10dp"/>
 
 
         <Button
@@ -66,7 +66,7 @@
             android:text="ListView Personalised Page"
             android:textColor="@color/white"
             android:textSize="25sp"
-            android:layout_marginVertical="20dp"/>
+            android:layout_marginVertical="10dp"/>
 
 
     </LinearLayout>

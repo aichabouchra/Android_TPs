@@ -3,21 +3,35 @@ package com.bouchra.calcul_app;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
+import android.util.SparseBooleanArray;
+import android.view.View;
 import android.widget.ArrayAdapter;
+import android.widget.Button;
 import android.widget.ListView;
 
 import java.util.ArrayList;
 import java.util.List;
 
+import android.content.Intent;
+import android.os.Bundle;
+import android.widget.TextView;
+
+import androidx.annotation.Nullable;
+import androidx.appcompat.app.AppCompatActivity;
+
+import java.util.ArrayList;
+
 public class ListViewActivity extends AppCompatActivity {
 
     ListView lf;
+    Button submitButton;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_list_view);
         lf=findViewById(R.id.ListFruits);
+        submitButton = findViewById(R.id.valider);
 
         List<String> Fruits=new ArrayList<>();
         Fruits.add("Orange");
@@ -44,5 +58,25 @@ public class ListViewActivity extends AppCompatActivity {
                 Fruits
         );
         lf.setAdapter(adapter);
+
+        submitButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick( View view) {
+                // Récupérer les éléments sélectionnés
+                SparseBooleanArray checked = lf.getCheckedItemPositions();
+                ArrayList<String> selectedFruits = new ArrayList<>();
+                for (int i = 0; i < checked.size(); i++) {
+                    int position = checked.keyAt(i);
+                    if (checked.valueAt(i)) {
+                        selectedFruits.add(Fruits.get(position));
+                    }
+                }
+
+                // Passer les données à la nouvelle activité
+                Intent intent = new Intent(ListViewActivity.this, SelectedFruitsActivity.class);
+                intent.putStringArrayListExtra("selectedFruits", selectedFruits);
+                startActivity(intent);
+            }
+        });
     }
 }

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -9,16 +9,47 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:orientation="vertical"
         android:layout_margin="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/titre2"
+            android:textColor="@color/black"
+            android:layout_gravity="center"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            android:layout_marginTop="20dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/choices"
+            android:textColor="@color/grey"
+            android:layout_gravity="center"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:layout_margin="10dp"/>
 
         <ListView
             android:id="@+id/ListFruits"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="590dp"
+            android:choiceMode="multipleChoice"
             android:divider="@color/purple"
-            android:dividerHeight="5dp"
-            android:choiceMode="multipleChoice"/>
+            android:dividerHeight="2dp" />
+
+        <Button
+            android:id="@+id/valider"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:text="Submit"
+            android:textColor="@color/white"
+            android:textSize="25sp"
+            android:layout_gravity="center"
+            android:layout_marginVertical="10dp"/>
 
     </LinearLayout>
 
-</RelativeLayout>
+</ScrollView>
